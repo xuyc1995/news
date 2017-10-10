@@ -1,7 +1,11 @@
 <template>
-    <div class='mainContainer'>
-        <sidebar></sidebar>
-        <router-view></router-view>
+    <div class='main-container'>
+        <div class='sidebar-container'>
+            <sidebar></sidebar>
+        </div>
+        <div class='homepage-right-container'>
+            <router-view></router-view>
+        </div>
     </div>
 </template>
 <script>
