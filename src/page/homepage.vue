@@ -4,13 +4,14 @@
             <sidebar></sidebar>
         </div>
         <div class='homepage-right-container'>
-            <router-view></router-view>
+            <newslist></newslist>
         </div>
     </div>
 </template>
 <script>
     import sidebar from '../components/sidebar'
+    import newslist from '../components/newslist'
     export default{
-        components:{sidebar}
+        components:{sidebar,newslist}
     }
 </script>
