@@ -1,0 +1,22 @@
+.newslist-container{
+    padding: 0 30px;
+    .title{
+        border-bottom: 1px solid #ff4949;
+        height: 40px;
+        position: relative;
+        p{
+            height: 100%;
+            line-height: 40px;
+            width: 80px;
+            border: 1px solid #ff4949;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-color: #ffffff;
+            position: absolute;
+            left: 0;
+            top: 1px;
+            text-align: center;
+            color: #ff4949;
+        }
+    }
+}

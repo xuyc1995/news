@@ -1,6 +1,7 @@
 <template>
-    <div>
-        <h1>newslist</h1>
+    <div class='newslist-container'>
+        <div class='title'>
+            <p>热门头条</p>
+        </div>
     </div>
-    
 </template>
