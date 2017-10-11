@@ -27,6 +27,12 @@
                     password:""
                 }
             }
+        },
+        created(){
+
+        },
+        methods:{
+
         }
     }
 </script>
