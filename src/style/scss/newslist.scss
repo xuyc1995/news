@@ -1,14 +1,14 @@
 .newslist-container{
-    padding: 0 30px;
+    padding: 20px 30px 0;
     .title{
-        border-bottom: 1px solid #ff4949;
+        border-bottom: 1px solid $maincolor;
         height: 40px;
         position: relative;
         p{
             height: 100%;
             line-height: 40px;
             width: 80px;
-            border: 1px solid #ff4949;
+            border: 1px solid $maincolor;
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
             border-bottom-color: #ffffff;
@@ -16,7 +16,67 @@
             left: 0;
             top: 1px;
             text-align: center;
-            color: #ff4949;
+            color: $maincolor;
+        }
+    }
+    .list{
+        li{
+            
+            border-bottom: 1px solid $liborder;
+            padding: 15px;
+            height: 80px;
+            display: flex;
+            flex-direction: row;
+            // box-sizing: border-box;
+            .list-left{
+                height: 100%;
+                width: 40px;
+                border-radius: 2px;
+                text-align: center;
+                >img{
+                    height: 30px;
+                    width: 30px;
+                    display: block;
+                    margin: 0 auto
+                }
+                >p{
+                    color: $dark;
+                }
+            }
+            &:hover{
+                background: #eee;
+            }
+            .list-center{
+                padding: 0 15px;
+                height: 100%;
+                flex: 1;
+                position: relative;
+                h1{
+                    font-size: 22px;
+                }
+                p{
+                    position: absolute;
+                    bottom: 0;
+                    color: $dark;
+                    font-size: 14px;
+                    >span{
+                        display: inline-block
+                    }
+                    .newslist-typename{
+                        color: #aaa;
+                        margin-left: 5px;
+                    }
+                }
+            }
+            .list-right{
+                
+                >img{
+                    display: block;
+                    display: block;
+                    width: 75px;
+                    height: 50px;
+                }
+            }
         }
     }
 }

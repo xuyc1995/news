@@ -1,0 +1,54 @@
+.regeister-container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    .regeister-box{
+        padding: 40px 35px;
+        width: 400px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 2;
+        background: #ffffff;
+        box-sizing: border-box;
+        border-radius: 5px;
+        input{
+            width: 100%;
+            outline: none;
+            border: 1px solid $grey;
+            border-radius: 5px;
+            height: 40px;
+            padding: 0 15px;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+        }
+        >div{
+            overflow: hidden;
+            height: 40px;
+            p{
+                float: left;
+                line-height: 40px;
+                height: 100%;
+                color: $grey;
+                font-size: 14px;
+                a{
+                    color: $maincolor
+                }
+            }
+            button{
+                float: right;
+                background: $maincolor;
+                color: #ffffff;
+                border: none;
+                height: 100%;
+                line-height: 40px;
+                padding: 0 20px;
+                border-radius: 5px;
+                float: right;
+                outline: none;
+            }
+        }
+        
+    }
+}

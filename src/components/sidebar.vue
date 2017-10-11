@@ -1,6 +1,5 @@
 <template>
     <div class="slidebar">
-      <img src="../assets/logo.png" />
       <ul>
         <li><a class="active" href=''>推荐</a></li>
         <li><a href=''>热点</a></li>
@@ -32,11 +31,11 @@
 
 <script>
 export default {
-  name: 'sidebar',
-  data () {
-    return {
-      
+    name: 'sidebar',
+    data () {
+        return {
+        
+        }
     }
-  }
 }
 </script>

@@ -1,12 +1,35 @@
-.sidebar-container {
-    width: 10%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    box-sizing: border-box;
+
+.main-header{
+    height: 40px;
+    background: #f1f1f1;
+    padding: 0 50px;
+    >a,>span{
+        display: inline-block;
+        height: 100%;
+        line-height: 40px;
+        float: right;
+        color: #ed4040;
+    }
+    >span{
+        color: $grey;
+    }
 }
 
-.homepage-right-container {
-    width: 950px;
-   float: right;
+.main-container {
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    .sidebar-container {
+        width: 10%;
+        height: 100%;
+        position: fixed;
+        top: 40px;
+        box-sizing: border-box;
+    }
+    
+    .homepage-right-container {
+        width: 950px;
+       float: right;
+    }
 }
