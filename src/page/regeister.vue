@@ -31,6 +31,9 @@
         created(){
 
         },
+        mounted(){
+            
+        },
         methods:{
 
         }

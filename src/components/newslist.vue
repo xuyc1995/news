@@ -32,8 +32,12 @@
     export default{
         data(){
             return {
-                lists:[1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+                lists:[1,2,3,4,5,6,7,8,9,10,11,12,13,14],
+                chosenItem:''
             }
+        },
+        mounted(){
+            this.getList()
         },
         methods:{
             goDetail:function(n){
@@ -41,6 +45,10 @@
                 this.$router.push({
                     path:'/'+n
                 })
+            },
+            //获取列表
+            getList:function(){
+                console.log(this.$route.query.index)
             }
         }
     }

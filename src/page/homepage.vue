@@ -7,7 +7,7 @@
         </div>
         <div class='main-container'>
             <div class='sidebar-container'>
-                <sidebar></sidebar>
+                <sidebar ></sidebar>
             </div>
             <div class='homepage-right-container' ref="right">
                 <router-view></router-view>
@@ -17,6 +17,7 @@
     </div>
 </template>
 <script>
+    import bus from '../bus.js'
     import loginmodal from '../components/loginmodal'
     import sidebar from '../components/sidebar'
     import newslist from '../components/newslist'

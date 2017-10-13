@@ -59,6 +59,7 @@ const tabItems=[
     type:"财经"
   }
 ]
+import bus from '../bus.js'
 export default {
     name: 'sidebar',
     data () {
@@ -71,6 +72,13 @@ export default {
         //改变导航item
         changeItem:function(id){
             this.chosenId=id
+            this.$router.push({
+                path:"/homepage",
+                query:{
+                    index:id
+                }
+            })
+            window.location.reload()
         }
     }
 }
