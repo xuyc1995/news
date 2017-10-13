@@ -1,0 +1,33 @@
+.singleNews-container{
+    padding: 50px 40px;
+    .title{
+        font-size: 36px;
+        text-align: center;
+    }
+    .subtitle{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        >p{
+            width: 5%;
+            text-align: center;
+            font-size: 16px;
+        }
+        .time{
+            flex: 1;
+            text-align: right;
+            color: #999
+        }
+        .comment,.love{
+            width: 10%;
+        }
+    }
+    .content{
+        font-size: 22px;
+        line-height: 36px;
+        text-indent: 2*24px;
+        padding-top: 20px;
+        color: $dark;
+        word-break: break-all
+    }
+}

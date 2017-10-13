@@ -10,7 +10,7 @@
                 <sidebar></sidebar>
             </div>
             <div class='homepage-right-container' ref="right">
-                <newslist></newslist>
+                <router-view></router-view>
             </div>
         </div>
         <loginmodal v-if="showLoginmodal"  v-on:quiteLoginmodal='quite'></loginmodal>
@@ -41,7 +41,7 @@
             },
             handleScroll:function(){
                 this.scroll=document.body.scrollTop
-                console.log(this.scroll)
+                // console.log(this.scroll)
             }
         }
     }

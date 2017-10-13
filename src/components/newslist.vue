@@ -4,7 +4,7 @@
             <p>热门头条</p>
         </div>
         <ul class='list'>
-            <li v-for='n in lists'>
+            <li v-for='n in lists' @click="goDetail(n)">
                 <div class='list-left'>
                     <img src='../assets/heart.png' />
                     <p>12</p>
@@ -33,6 +33,14 @@
         data(){
             return {
                 lists:[1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+            }
+        },
+        methods:{
+            goDetail:function(n){
+                console.log(n)
+                this.$router.push({
+                    path:'/'+n
+                })
             }
         }
     }
