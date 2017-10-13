@@ -40,9 +40,8 @@
                 this.showLoginmodal=true
             },
             handleScroll:function(){
-                // this.scroll=document.body.scrollTop
-                // console.log(this.scroll)
-                console.log(this.$refs.right.scrollTop)
+                this.scroll=document.body.scrollTop
+                console.log(this.scroll)
             }
         }
     }
