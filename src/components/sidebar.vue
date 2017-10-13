@@ -1,16 +1,7 @@
 <template>
     <div class="slidebar">
       <ul>
-        <li><a class="active" href=''>推荐</a></li>
-        <li><a href=''>热点</a></li>
-        <li><a href=''>图片</a></li>
-        <li><a href=''>科技</a></li>
-        <li><a href=''>社会</a></li>
-        <li><a href=''>娱乐</a></li>
-        <li><a href=''>游戏</a></li>
-        <li><a href=''>体育</a></li>
-        <li><a href=''>汽车</a></li>
-        <li><a href=''>财经</a></li>
+        <li v-for="item in list" @click="changeItem(item.id)"><a href='javascript:;' :class="{active:item.id==chosenId}">{{item.type}}</a></li>
         <li>
           <a href='' id="showmore">
             更多
@@ -30,11 +21,56 @@
 </template>
 
 <script>
+const tabItems=[
+  {
+    id:1,
+    type:"推荐"
+  },
+  {
+    id:2,
+    type:"热点"
+  },{
+    id:3,
+    type:"图片"
+  },
+  {
+    id:4,
+    type:"科技"
+  },{
+    id:5,
+    type:"社会"
+  },
+  {
+    id:6,
+    type:"娱乐"
+  },{
+    id:7,
+    type:"游戏"
+  },
+  {
+    id:8,
+    type:"体育"
+  },{
+    id:9,
+    type:"汽车"
+  },
+  {
+    id:10,
+    type:"财经"
+  }
+]
 export default {
     name: 'sidebar',
     data () {
         return {
-        
+            list:tabItems,
+            chosenId:1
+        }
+    },
+    methods:{
+        //改变导航item
+        changeItem:function(id){
+            this.chosenId=id
         }
     }
 }
