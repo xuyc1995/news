@@ -1,4 +1,5 @@
 import Vue from 'vue'
+
 import Router from 'vue-router'
 import homepage from '@/page/homepage'
 import regeister from '@/page/regeister'
@@ -11,7 +12,8 @@ export default new Router({
   routes: [
     {
       path:'/',
-      redirect:'/homepage'
+      // redirect:'/homepage',
+      component: regeister
     },
     {
       path: '/homepage',
@@ -25,8 +27,7 @@ export default new Router({
     {
       path: '/regeister',
       name: 'regeister',
-      component: regeister,
-      
+      component: regeister
     }
   ]
 })
